@@ -1263,7 +1263,7 @@ static std::pair<std::unique_ptr<flutter::EmbedderExternalViewEmbedder>,
 InferExternalViewEmbedderFromArgs(const FlutterCompositor* compositor,
                                   bool enable_impeller) {
   if (compositor == nullptr) {
-    return {nullptr, false};
+    return {nullptr, true};
   }
 
   auto c_create_callback =
